@@ -1,0 +1,72 @@
+/* CSS RESET */
+
+/* I have used a CSS Reset from the web  */
+
+
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+/* CUSTOM STYLE START FROM HERE */
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 0.2fr 5fr auto;
+    grid-template-rows: 15fr 20fr 8fr;
+    grid-template-areas:
+        "nav header"
+        "nav section"
+        "nav footer";
+    height: 100vh;
+
+}
+
+
+
+header {
+    grid-area: header;
+    background-color: #666;
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+}
+
+
+footer {
+    grid-area: footer;
+    background-color: turquoise;
+}
+
+nav {
+    grid-area: nav;
+    /* width: 110px; */
+    background-color: red;
+}
+
+section {
+    grid-area: section;
+    background-color: green;
+}
