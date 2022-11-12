@@ -74,8 +74,21 @@ header {
 
 
 #album-art-header {
-    /* height: 100%; */
+
+    display: flex;
+    justify-content: center;
+    /* align horizontal */
+    align-items: center;
+    /* align vertical */
+    margin-left: 10px;
+
 }
+
+#album-art-header img {
+
+    height: 100%;
+}
+
 
 #album-name {
 
@@ -101,6 +114,7 @@ header {
 #controls-top {
 
     display: flex;
+    margin-top: -50px;
     font-size: 15px;
 
 
@@ -112,7 +126,7 @@ header {
     /* align-self: left; */
 }
 
-#controls-top p i{
+#controls-top p i {
     margin-right: 3px;
 }
 
@@ -144,16 +158,83 @@ header {
 footer {
     grid-area: footer;
     height: 120px;
+    color: white;
     display: flex;
     background-color: #43689b;
 }
 
 
 
+#album-art-footer {
+
+    width: 100px;
+
+
+}
+
+#artist-name-footer {
+
+    font-size: 15px;
+    margin-top: 10px;
+
+
+}
+
+
+#song-name-footer {
+
+    font-size: 15px;
+}
+
+#footer-wrapper {
+    display: flex;
+    margin-left: 15px;
+    align-items: center;
+    flex-grow: 1;
+
+    justify-content: space-between;
+}
+
+
+.footer-controls {
+    font-size: 2.5em;
+    color: white;
+    justify-content: space-evenly;
+    flex-grow: 0.5;
+    display: flex;
+
+}
+
+.footer-control-container {
+    font-size: 2em;
+
+
+
+
+}
+
+#footer-album-container {
+    display: flex;
+    justify-content: center;
+    /* align horizontal */
+    align-items: center;
+    /* align vertical */
+    margin-left: 10px;
+
+
+
+}
+
+
+#footer-album-container img {}
+
+
+
+
 
 nav {
     grid-area: nav;
-    display:flex;
+    display: flex;
     /* width: 110px; */
     background-color: #f0f0f0;
     justify-content: center;
@@ -202,59 +283,4 @@ th, td {
 
 tr:nth-child(even) {
     background-color: #f2f2f2;
-}
-
-
-#album-art-footer {
-
-    width: 100px;
-
-
-}
-
-#artist-name-footer {
-
-    font-size: 15px;
-    margin-top: 10px;
-
-
-}
-
-
-#song-name-footer {
-
-    font-size: 15px;
-}
-
-#footer-wrapper {
-    display: flex;
-    margin-left: 15px;
-    align-items: center;
-    flex-grow: 1;
-
-    justify-content: space-between;
-}
-
-
-.footer-controls {
-    font-size: 2.5em;
-    color: white;
-    justify-content: space-evenly;
-    flex-grow: 0.5;
-    display:flex;
-
-}
-
-.footer-control-container {
-    font-size: 2em;
-
-
-
-
-}
-
-#footer-album-container {
-    display: flex;
-    justify-content: center;
-
 }
