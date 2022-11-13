@@ -1,0 +1,219 @@
+/* CSS RESET */
+/* I have used a CSS Reset from the web */
+html {
+	box-sizing: border-box;
+	font-size: 16px;
+	font-family: 'Lato', sans-serif;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+	margin: 0;
+	padding: 0;
+	font-weight: normal;
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+i {
+	cursor: pointer;
+}
+
+/* CUSTOM STYLE START FROM HERE */
+.app {
+	display: grid;
+	grid-template-columns: 0.17fr 5fr auto;
+	grid-template-rows: 15fr 20fr 1fr;
+	grid-template-areas: "nav header""nav playlist""nav footer";
+	height: 100vh;
+}
+
+/* HEADER */
+header {
+	grid-area: header;
+	display: flex;
+	flex-basis: auto;
+	justify-content: flex-start;
+	background-color: #454545;
+}
+
+.playlist-info {
+	padding: 30px;
+	color: white;
+}
+
+#album-art-header {
+	margin-left: 10px;
+}
+
+.playlist-details-top {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+#album-art-header img {
+	height: 100%;
+}
+
+#album-name {
+	font-size: 30px;
+	font-weight: bold;
+}
+
+#artist-name-top {
+	font-size: 20px;
+	margin-top: 15px;
+	align-items: flex-start;
+}
+
+#discography-top {
+	font-size: 20px;
+}
+
+#controls-top {
+	display: flex;
+	margin-top: -50px;
+	font-size: 15px;
+}
+
+#controls-top p:not(:first-child) {
+	margin-left: 10px;
+}
+
+#controls-top p i {
+	margin-right: 3px;
+}
+
+.playlist-details-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	margin-left: 40px;
+}
+
+#player-controls {
+	align-self: flex-end;
+}
+
+/* FOOTER */
+footer {
+	grid-area: footer;
+	height: 120px;
+	color: white;
+	display: flex;
+	background-color: #43689b;
+}
+
+#album-art-footer {
+	width: 100px;
+}
+
+#artist-name-footer {
+	font-size: 15px;
+	margin-top: 10px;
+}
+
+#song-name-footer {
+	font-size: 15px;
+}
+
+#footer-wrapper {
+	display: flex;
+	margin-left: 15px;
+	align-items: center;
+	flex-grow: 1;
+	justify-content: space-between;
+}
+
+.footer-controls {
+	font-size: 2.5em;
+	color: white;
+	justify-content: space-evenly;
+	flex-grow: 0.5;
+	display: flex;
+}
+
+.footer-control-container {
+	font-size: 2em;
+}
+
+#footer-album-container {
+	display: flex;
+	justify-content: center;
+	/* align horizontal */
+	align-items: center;
+	/* align vertical */
+	margin-left: 10px;
+}
+
+/* NAVIGATION */
+nav {
+	grid-area: nav;
+	display: flex;
+	/* width: 110px;
+     */
+	background-color: #f2f2f2;
+	justify-content: center;
+}
+
+.nav-container {
+	display: flex;
+	font-size: 25px;
+	flex-direction: column;
+	justify-content: space-evenly;
+}
+
+/* BODY */
+.cloud-sync {
+	border-width: 1px;
+	padding: 5px;
+	font-weight: 500;
+	text-decoration-line: none;
+	text-transform: uppercase;
+	border-color: black;
+	border-style: solid;
+}
+
+.playlist {
+	grid-area: playlist;
+}
+
+table {
+	border-collapse: collapse;
+	margin-left: 10px;
+	border-spacing: 0;
+	width: 99%;
+}
+
+th,
+td {
+	text-align: left;
+	padding: 16px;
+}
+
+tr:nth-child(even) {
+	background-color: #f2f2f2;
+}
