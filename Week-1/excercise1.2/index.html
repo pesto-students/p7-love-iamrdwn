@@ -12,17 +12,18 @@
         href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
     <link rel="stylesheet" href="style.css">
 
-    <title>Document</title>
+    <title>Week 1 - Assignment</title>
 
 </head>
 
 <body>
-    <div class="wrapper">
-        <header>
-            <div id="album-art-header"><img src="2Eq--cattyboard.jpg   " alt=""></div>
+    <div class="app">
+        <!-- HEADER  -->
+        <header class="playlist-info">
+            <div id="album-art-header"><img src="assets/2Eq--cattyboard.jpg" alt=""></div>
 
-            <div class="now-playing-container">
-                <div class="artist-details-top">
+            <div class="playlist-details-container">
+                <div class="playlist-details-top">
                     <p id="album-name">CattyBoard Top 100 Singles Charts</p>
                     <p id="artist-name-top">Unknown Artist</p>
                     <p id="discography-top">2016. Charts. 100 songs</p>
@@ -30,11 +31,13 @@
                 <div id="controls-top">
 
                     <p>
-                    <i class="las la-play"></i>
-                    Play all</p>
+                        <i class="las la-play"></i>
+                        Play all
+                    </p>
 
                     <p>
-                        <i class="las la-plus"></i>Add to</p>
+                        <i class="las la-plus"></i>Add to
+                    </p>
 
                     <p><i class="las la-ellipsis-h"></i>More</p>
 
@@ -43,8 +46,12 @@
                 </div>
             </div>
 
-
         </header>
+        <!-- HEADER END  -->
+
+
+        <!-- SIDE NAVBAR -->
+
         <nav>
             <div class="nav-container">
                 <i class="las la-bars"></i>
@@ -60,7 +67,11 @@
 
 
         </nav>
-        <section>
+
+
+        <!-- SIDE NAVBAR END -->
+
+        <main class="playlist">
             <div>
                 <table>
                     <tr>
@@ -71,58 +82,64 @@
 
                     </tr>
                     <tr>
-                        <td>1. One Dance</td>
-                        <td>Crake Ft. CatKid & Cyla</td>
-                        <td>2:54 mins</td>
+                        <td>2. Panda</td>
+                        <td>Cattee</td>
+                        <td>4:06 mins</td>
                         <td><a class="cloud-sync" href='#'>Catty Cloud Sync</a></td>
 
                     </tr>
                     <tr>
-                        <td>1. One Dance</td>
-                        <td>Crake Ft. CatKid & Cyla</td>
-                        <td>2:54 mins</td>
+                        <td>3. Can't Stop the Feeling!</td>
+                        <td>Catin Cimberlake</td>
+                        <td>3:56 mins</td>
                         <td><a class="cloud-sync" href='#'>Catty Cloud Sync</a></td>
                     </tr>
                     <tr>
-                        <td>1. One Dance</td>
-                        <td>Crake Ft. CatKid & Cyla</td>
-                        <td>2:54 mins</td>
+                        <td>4. Work From Home</td>
+                        <td>Cat Harmony Ft. Colla</td>
+                        <td>3:34 mins</td>
                         <td><a class="cloud-sync" href='#'>Catty Cloud Sync</a></td>
 
                     </tr>
 
                 </table>
             </div>
-        </section>
-        <footer>
+        </main>
+
+        <!-- FOOTER -->
+        <footer class="now-playing">
 
             <div id="footer-album-container">
-                <img id="album-art-footer" src="2Eq--cattyboard.jpg   " alt="">
+                <img id="album-art-footer" src="assets/2Eq--cattyboard.jpg" alt="">
             </div>
 
 
             <div id="footer-wrapper">
-            <div class="footer-discography">
+                <div class="footer-discography">
 
-                <p id="song-name-footer">If it ain't love</p>
-                <p id="artist-name-footer">Catson Derulo</p>
+                    <p id="song-name-footer">If it ain't love</p>
+                    <p id="artist-name-footer">Catson Derulo</p>
 
 
 
-        </div>
-        <div class="footer-controls">
+                </div>
+                <div class="footer-controls">
 
-                <i class="las la-step-backward"></i>
-                <i class="las la-step-forward"></i>
-                <i class="las la-undo-alt"></i>
-                <i class="las la-random"></i>
+                    <i class="las la-step-backward"></i>
+                    <i class="las la-pause"></i>
+                    <i class="las la-step-forward"></i>
+                    <i class="las la-undo-alt"></i>
+                    <i class="las la-random"></i>
 
-        </div>
+                </div>
 
-    </div>
+            </div>
 
         </footer>
+
+        <!-- FOOTER ENDS -->
     </div>
+
 
 </body>
 
