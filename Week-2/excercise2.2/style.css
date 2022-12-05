@@ -1,0 +1,50 @@
+body {
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.app {
+	display: flex;
+	position: absolute;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	width: 200px;
+}
+
+.app:hover .clock {
+	transition: transform 1s;
+	transform: rotate(90deg);
+}
+
+.app:hover .anti_clock {
+	transition: transform 1s;
+	transform: rotate(-90deg);
+}
+
+.square {
+	width: 100px;
+	height: 100px;
+}
+
+#red {
+	background-color: red;
+	transform-origin: top left;
+}
+
+#green {
+	background-color: green;
+	transform-origin: bottom right;
+}
+
+#blue {
+	background-color: blue;
+	transform-origin: bottom left;
+}
+
+#yellow {
+	background-color: yellow;
+	transform-origin: top right;
+}
