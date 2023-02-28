@@ -1,107 +1,54 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;800;900&display=swap");
 
 .App {
-  font-family: sans-serif;
-  text-align: center;
-  font-family: Inter;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+  background-color: #f0f1f5;
 }
 
-h1 {
-  font-weight: 800;
+* {
+  /* outline: 1px solid red;
+  outline-offset: -1px; */
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
 }
 
-.task {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.task > h3 {
-  margin-left: 8px;
-}
-
-.task > .done {
-  flex-direction: flex-end;
-}
-
-.green-btn {
-  background-color: #b6efd4;
-}
-
-.bgImg {
-  width: 60%;
-}
-
-.red-btn {
-  background-color: #f99f9f;
-  color: #860909;
-}
-input[type="text"] {
-  display: inline-block;
-  padding: 0 16px 0 12px;
-  width: 100%;
-  line-height: 32px;
-  height: 32px;
-  border: 1px solid #dddbda;
-  border-radius: 4px;
-  background-color: #fff;
-  color: rgb(8, 7, 7);
-  transition: border 0.1s linear, background-color 0.1s linear;
-}
-
-input[type="text"]:focus {
-  border-color: #1b96ff;
-  color: var(--sds-c-input-text-color-focus);
-  box-shadow: rgb(1, 118, 211) 0px 0px 3px 0px;
-}
-
-.add_task {
-  display: inline-block;
-  outline: none;
-  width: 50%;
-  height: 32px;
-  margin-left: 10px;
-  cursor: pointer;
-  padding: 0 16px;
-  background-color: #0070d2;
-  border-radius: 0.25rem;
-  border: 1px solid #0070d2;
-  color: #fff;
-  font-size: 13px;
-  line-height: 32px;
-  font-weight: 400;
-  text-align: center;
-}
-
-.add_task:hover {
-  background-color: #005fb2;
-  border-color: #005fb2;
-}
-
-.done {
-  display: inline-block;
-  outline: none;
-  border-width: 0px;
-  border-radius: 3px;
+button,
+fieldset,
+input,
+legend,
+select,
+textarea {
+  appearance: none;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  margin: 0;
   box-sizing: border-box;
-  font-size: inherit;
-  font-weight: 500;
-  max-width: 100%;
-  text-align: center;
-  text-decoration: none;
-  cursor: pointer;
-  height: 32px;
-  line-height: 32px;
-  padding: 0px 12px;
-  vertical-align: middle;
-  width: auto;
-  font-size: 14px;
 }
 
-.done:hover {
-  background: #091e4214;
-  text-decoration: inherit;
-  transition-duration: 0s, 0.15s;
-  color: #42526e;
+input[type="url"] {
+  font-weight: 400;
+  height: 50px;
+  border-radius: 12px;
+  border-width: 1px;
+  border-style: solid;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+button[type="submit"] {
+  /* border-radius: 12px; */
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+  padding: 10px;
+  background-color: hsl(213, 73%, 50%);
+  color: white;
+}
+
+button[type="submit"]:hover {
+  background-color: hsl(213, 73%, 40%);
+  cursor: pointer;
 }
