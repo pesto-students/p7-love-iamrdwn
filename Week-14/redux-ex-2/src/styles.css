@@ -1,0 +1,28 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  border: none;
+  padding: 10px;
+  margin: 5px;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: box-shadow 200ms ease-out;
+  text-decoration: none;
+}
+
+.purple-button {
+  background-color: #663797;
+}
+
+.grey-button {
+  color: black;
+}
+
+button:hover {
+}
